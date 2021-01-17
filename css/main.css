@@ -94,16 +94,9 @@ img {
 }
 
 .header {
-  display: flex;
-  align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
 }
 
 .header .logo {
@@ -122,6 +115,11 @@ img {
 
 .header .addres-list-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
 }
 
 .site-nav {
@@ -421,7 +419,7 @@ img {
   width: 231px;
 }
 
-.addres-list li:not(:last-child) {
+.addres-list-footer li:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -619,7 +617,7 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
-  width: 30px;
+  width: 32px;
   height: 30px;
   padding: 6px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -683,6 +681,11 @@ img {
 
 .modal-form-field {
   margin-bottom: 10px;
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 }
 
 .modal-form-message {
@@ -702,6 +705,9 @@ img {
 }
 
 .modal-form-policy-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -718,6 +724,16 @@ img {
   height: 15px;
   border: 1px solid #000000;
   border-radius: 2px;
+}
+
+.policy-text {
+  margin-left: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: var(--accent-color);
 }
 
 .modal-form-policy:checked + .modal-form-policy-text::before {

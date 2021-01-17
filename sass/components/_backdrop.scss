@@ -46,7 +46,7 @@
   position: absolute;
   top: 8px;
   right: 8px;
-  width: 30px;
+  width: 32px;
   height: 30px;
   padding: 6px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -111,6 +111,12 @@
 }
 .modal-form-field {
   margin-bottom: 10px;
+
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 }
 
 .modal-form-message {
@@ -130,6 +136,9 @@
 }
 
 .modal-form-policy-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -148,6 +157,15 @@
   }
 }
 
+.policy-text {
+  margin-left: 5px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: var(--accent-color);
+}
 .modal-form-policy:checked + .modal-form-policy-text::before {
   border: none;
   background-image: url('../images/modal-icon-check.png');
