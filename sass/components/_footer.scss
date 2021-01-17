@@ -1,0 +1,133 @@
+.direction {
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0;
+
+  .logo {
+    color: var(--white-color);
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+  }
+
+  .addres-list {
+    margin-top: 20px;
+    width: 231px;
+  }
+}
+
+.addres-list li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-form {
+  display: flex;
+  margin-left: 93px;
+}
+
+.footer-form-slogan {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--white-color);
+}
+
+.footer-form-email {
+  width: 358px;
+  height: 50px;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+}
+.subscribe-btn {
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 12px;
+  margin-top: 37px;
+  color: var(--white-color);
+  cursor: pointer;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-send {
+  margin-left: 10px;
+}
+
+.join-us {
+  display: block;
+  font-weight: 700;
+  color: var(--white-color);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer > .container {
+  display: flex;
+}
+
+.left-side {
+  margin-right: 70px;
+}
+
+.right-side {
+  margin-top: 12px;
+}
+
+.social-list.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.social-list-link.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+
+    & .social-link-icon {
+      fill: var(--white-color);
+    }
+  }
+}
+
+.social-list-item.bottom:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link-icon.bottom {
+  fill: var(--white-color);
+  width: 20px;
+  height: 20px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link-icon:not(:last-child) {
+  margin-right: 10px;
+}

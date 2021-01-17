@@ -1,0 +1,37 @@
+.hero .hero-btn {
+  min-width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  cursor: pointer;
+  padding: 10px 32px;
+  display: block;
+  margin: 0 auto;
+}
+
+.parts-list .portfolio-btn {
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  cursor: pointer;
+  padding: 6px 22px;
+  border: 0;
+}
+
+.button {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+  }
+}
