@@ -16,10 +16,20 @@
     font-size: 26px;
     line-height: 1.19;
   }
+}
+.addres-list-footer {
+  margin-top: 20px;
+  width: 231px;
 
-  .addres-list {
-    margin-top: 20px;
-    width: 231px;
+  & a {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
